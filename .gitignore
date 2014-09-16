@@ -23,3 +23,5 @@ content/themes/devteaminc/*
 !/content/themes/devteaminc/
 
 !/content/themes/devteaminc/*
+
+deploy_listener.js
