@@ -8,6 +8,7 @@ This is the theme repository for the devteaminc blog and the devteaminc theme.
 
 - Node 
 - NPM
+- wget (from homebrew - `brew install wget`)
 
 **Installation**
 
