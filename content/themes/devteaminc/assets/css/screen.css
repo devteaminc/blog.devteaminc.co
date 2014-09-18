@@ -668,6 +668,7 @@ margin on the iframe, cause it breaks stuff. */
     position: absolute;
     right: 40px;
     bottom: 20px;
+    display: none;
 }
 
 .main-nav.overlay a:hover {
@@ -711,7 +712,10 @@ margin on the iframe, cause it breaks stuff. */
 
 .menu-nav {
     display: inline-block;
+    background: rgba(239,54,98,1);
     background: -webkit-linear-gradient(rgba(238, 87, 123, 1), rgba(239,54,98,1));
+    background: -moz-linear-gradient(rgba(238, 87, 123, 1), rgba(239,54,98,1))
+    background: linear-gradient(rgba(238, 87, 123, 1), rgba(239,54,98,1))
     box-shadow: 0 3px 0 rgba(0,0,0,0.1), 0 3px 0 rgba(218, 37, 80, 1) inset;
     width: 100%;
 }
@@ -845,14 +849,14 @@ body:not(.post-template) .post-title {
 .post-excerpt p {
     margin: 0 20px;
 }
-.home-template .post-header {
+.home-template .post-header, .author-template .post-header {
     position: absolute;
     width: 100%;
     height: 600px;
     z-index: 10;
 }
 
-.home-template .post-header .post-title a {
+.home-template .post-header .post-title a, .author-template .post-header .post-title a {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -865,19 +869,19 @@ body:not(.post-template) .post-title {
     transition: all 300ms;
 }
 
-.home-template .post-header .post-title a:focus, .post-header .post-title a:active {
+.home-template .post-header .post-title a:focus, .post-header .post-title a:active, .author-template .post-header .post-title a:focus, .author-header .post-title a:active {
     box-shadow: 0 0 0 #4C3CA8;
     margin-top: 0px;
     transition: all 100ms;
 }
 
-.home-template .post-header .post-title a:hover {
+.home-template .post-header .post-title a:hover, .author-template .post-header .post-title a:hover {
     box-shadow: 0 3px 0 #4C3CA8;
     margin-top: -3px;
     transition: all 100ms;
 }
 
-.home-template .post-excerpt .preview-image {
+.home-template .post-excerpt .preview-image, .author-template .post-excerpt .preview-image {
     width: 100%;
     height: 600px;
     overflow: hidden;
@@ -886,14 +890,15 @@ body:not(.post-template) .post-title {
     background: #F4F8FA;
 }
 
-.home-template .post-excerpt .preview-image p {
+.home-template .post-excerpt .preview-image p, .author-template .post-excerpt .preview-image p {
     margin: 0;
 }
 
-.home-template .post-excerpt .preview-image .full-img {
+.home-template .post-excerpt .preview-image .full-img, .author-template .post-excerpt .preview-image .full-img {
     position: relative;
     top: 100%;
     left: 50%;
+    transform: -webkit-translate(-50%, -25%);
     transform: translate(-50%, -25%);
     z-index: 0;
     width: 100%;
@@ -1497,11 +1502,11 @@ body:not(.post-template) .post-title {
         line-height: 1.65em;
     }
 
-    .home-template .post-header {
+    .home-template .post-header, .author-template .post-header {
         height: 300px;        
     }
 
-    .home-template .post-excerpt .preview-image {
+    .home-template .post-excerpt .preview-image, .author-template .post-excerpt .preview-image {
         height: 300px;
     }
 
@@ -1572,7 +1577,7 @@ body:not(.post-template) .post-title {
         height: auto;
         min-height: 240px;
         height: 60%;
-        padding: 15% 0;
+        padding: 0 0 30%;
     }
 
     .scroll-down { display: none; }
@@ -1600,7 +1605,7 @@ body:not(.post-template) .post-title {
         font-size: 0.7em
     }
 
-    .home-template .post-excerpt .preview-image .full-img {
+    .home-template .post-excerpt .preview-image .full-img, .author-template .post-excerpt .preview-image .full-img {
         width: 210%;
     }
 
@@ -1680,13 +1685,13 @@ body:not(.post-template) .post-title {
         display: none;
     }
 
-    .home-template .main-nav .nav-menu {
+    .home-template .main-nav .nav-menu, .author-template .main-nav .nav-menu {
         width: 100%;
         padding: 0;
         margin: 10px 0;
     }
 
-    .home-template .main-nav .nav-menu li {
+    .home-template .main-nav .nav-menu li, .author-template .main-nav .nav-menu li {
         margin: 0;
         width: 25%;
         font-size: 14px;
