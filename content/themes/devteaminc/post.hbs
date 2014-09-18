@@ -3,8 +3,17 @@
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
 
+<nav class="menu-nav">
+        {{#if @blog.logo}}<a class="blog-logo" href="http://devteaminc.co/"><img src="{{@blog.logo}}" alt="DevTeam Inc." /></a>{{/if}}
+        <ul class="nav-menu">
+        <li><a href="http://devteaminc.co/#team">Team</a></li>
+        <li><a href="http://devteaminc.co/#about">About</a></li>
+        <li><a href="http://devteaminc.co/#contact">Contact</a></li>
+        <li><a href="{{@blog.url}}">Blog</a></li>
+        </ul>
+</nav>          
 <nav class="main-nav clearfix">
-    <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
+    <a class="back-button icon-arrow-left" href="{{@blog.url}}">Blog Index</a>
     <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
 </nav>
 
