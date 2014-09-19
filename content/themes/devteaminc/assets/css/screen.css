@@ -1511,7 +1511,7 @@ body:not(.post-template) .post-title {
     }
 
     .home-template .post-excerpt .preview-image .full-img, .author-template .post-excerpt .preview-image .full-img {
-        transform: translate(-50%, -23%);
+        transform: translate(-50%, -25%);
     }
 
     p, ul, ol, dl {
