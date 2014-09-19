@@ -899,7 +899,7 @@ body:not(.post-template) .post-title {
     top: 100%;
     left: 50%;
     transform: -webkit-translate(-50%, -25%);
-    transform: translate(-50%, -25%);
+    transform: translate(-50%, -12%);
     z-index: 0;
     width: 100%;
     opacity: 0.8;
@@ -1508,6 +1508,10 @@ body:not(.post-template) .post-title {
 
     .home-template .post-excerpt .preview-image, .author-template .post-excerpt .preview-image {
         height: 300px;
+    }
+
+    .home-template .post-excerpt .preview-image .full-img, .author-template .post-excerpt .preview-image .full-img {
+        transform: translate(-50%, -23%);
     }
 
     p, ul, ol, dl {
