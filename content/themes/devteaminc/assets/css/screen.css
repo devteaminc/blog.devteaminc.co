@@ -1899,7 +1899,12 @@ body:not(.post-template) .post-title {
     }
 
     .post-title {
+    }
+
+    .home-template .post-header .post-title a, .author-template .post-header .post-title a {
+        width: 75%;
         font-size: 24px;
+        padding: 10px;
     }
 
     .post-template .post {
