@@ -366,7 +366,7 @@ pre:before {
     height: 30px;
     position: absolute;
     /* top: 0; */
-    margin-left: -10px;
+    margin-left: -18px;
     margin-top: -40px;
     border-radius: 5px 5px 0 0;
 }
@@ -1567,6 +1567,10 @@ body:not(.post-template) .post-title {
         font-size: 3.6rem;
     }
 
+    pre:before {
+        margin-left: -14px;
+    }
+
 }
 
 
@@ -1683,6 +1687,10 @@ body:not(.post-template) .post-title {
 
     .no-cover.author-head.main-header {
         padding: 0;
+    }
+
+        pre:before {
+        margin-left: -13px;
     }
 
 }
