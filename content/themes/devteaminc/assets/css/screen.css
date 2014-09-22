@@ -871,8 +871,6 @@ body:not(.post-template) .post-title {
     border-radius: 5px;
     width: 50%;
     transition: all 300ms;
-    -ms-word-break: normal;
-    word-break: normal;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
