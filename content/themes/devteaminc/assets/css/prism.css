@@ -11,7 +11,6 @@ pre[class*="language-"] {
 	font-family: Consolas, Monaco, 'Andale Mono', monospace;
 	direction: ltr;
 	text-align: left;
-	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
 	line-height: 1.5;
@@ -47,7 +46,6 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 1em;
 	overflow: auto;
 }
 
@@ -108,17 +106,17 @@ pre[class*="language-"] {
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-	color: #07a;
+	color: #82D9FF;
 }
 
 .token.function {
-	color: #DD4A68;
+	color: #df4949;
 }
 
 .token.regex,
 .token.important,
 .token.variable {
-	color: #e90;
+	color: #e69a3a;
 }
 
 .token.important {
