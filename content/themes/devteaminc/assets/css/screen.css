@@ -876,7 +876,7 @@ body:not(.post-template) .post-title {
     border-radius: 5px;
     width: 50%;
     transition: all 300ms;
-
+    text-transform: capitalize;;
 }
 
 .home-template .post-header .post-title a:focus, .post-header .post-title a:active, .author-template .post-header .post-title a:focus, .author-header .post-title a:active {
@@ -893,11 +893,12 @@ body:not(.post-template) .post-title {
 
 .home-template .post-excerpt .preview-image, .author-template .post-excerpt .preview-image {
     width: 100%;
-    height: 600px;
+    /*height: 600px;*/
+    min-height: 400px;
     overflow: hidden;
     border-radius: 5px;
     margin: 20px 0;
-    background: #F4F8FA;
+    /*background: #F4F8FA;*/
 }
 
 .home-template .post-excerpt .preview-image p, .author-template .post-excerpt .preview-image p {
@@ -908,7 +909,7 @@ body:not(.post-template) .post-title {
     position: relative;
     top: 100%;
     left: 50%;
-    transform: -webkit-translate(-50%, -25%);
+    transform: -webkit-translate(-50%, 0%);
     transform: translate(-50%, -12%);
     z-index: 0;
     width: 100%;
@@ -1030,7 +1031,7 @@ body:not(.post-template) .post-title {
 .post-template .post-title {
     margin-bottom: 0;
     text-align: center;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .post-template .post-meta {
@@ -1518,10 +1519,11 @@ body:not(.post-template) .post-title {
 
     .home-template .post-excerpt .preview-image, .author-template .post-excerpt .preview-image {
         height: 300px;
+        min-height: 0;
     }
 
     .home-template .post-excerpt .preview-image .full-img, .author-template .post-excerpt .preview-image .full-img {
-        transform: translate(-50%, -25%);
+        transform: translate(-50%, -12%);
     }
 
     p, ul, ol, dl {
